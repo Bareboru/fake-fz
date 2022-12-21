@@ -6,6 +6,8 @@
 
 欢迎有能力的同志对代码进行加强。
 
+安卓请移步 [AntiZhaPian](https://github.com/XJP-GIT/AntiZhaPian) 
+
 # 使用规则
 
 用safari打开网页
