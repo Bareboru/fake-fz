@@ -16,6 +16,6 @@
 <link rel="apple-touch-icon” sizes=“114x114” href=“./img/icon.png”/>
 ```
 
-#文件为纯静态网页形式，
+文件为纯静态网页形式，
 
-#可以自己部署在vercel上或者4everland上均可，当然也可以直接上传至自己的服务器或者虚拟主机上。
+可以自己部署在vercel上或者4everland上均可，当然也可以直接上传至自己的服务器或者虚拟主机上。
