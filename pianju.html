@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width,minimal-ui,user-scalable=no,viewport-fit=contain">
+<meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+<meta name="theme-color" content="#ffffff">
+<link rel="apple-touch-icon" sizes="114x114" href="img/fz.PNG"/>
+<link rel="apple-touch-startup-image" href="img/Launch. png"/>
+<title>国家反诈中心APP</title>
+<meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport" />
+<link type="text/css" rel="stylesheet" href="skin/css/basic.css" />
+<script type="text/javascript" src="skin/js/jquery-1.7.2.min.js"></script>
+	<!--全屏-->
+	<script>
+if(('standalone' in window.navigator)&&window.navigator.standalone){
+        var noddy,remotes=false;
+        document.addEventListener('click',function(event){
+                noddy=event.target;
+                while(noddy.nodeName!=='A'&&noddy.nodeName!=='HTML') noddy=noddy.parentNode;
+                if('href' in noddy&&noddy.href.indexOf('http')!==-1&&(noddy.href.indexOf(document.location.host)!==-1||remotes)){
+                        event.preventDefault();
+                        document.location.href=noddy.href;
+                }
+        },false);
+}
+</script>
+<!--加载样式-->
+<script>
+$(window).load(function() {
+	$("#status").fadeOut();
+	$("#preloader").delay(350).fadeOut("slow");
+})
+</script>
+</head>
+
+<body>
+	<!--主体开始-->
+<style>
+/*--预设--*/ 
+body { padding:0px;margin: 0px; } 
+#lyrow, #lyrow input, #lyrow textarea { font-size:12px;font-family: 'Microsoft YaHei', '微软雅黑', MicrosoftJhengHei, '华文细黑', STHeiti, MingLiu; } 
+#lyrow { height:100vh;width: 100vw; } 
+#lyrow div { min-height: 18px;  } 
+#lyrow input, #lyrow textarea { border:rgb(235, 235, 235) 1px solid;border-radius: 3px;padding: 5px 8px;outline: 0; } 
+#lyrow input:hover, #lyrow textarea:hover { border: 1px solid #6bc1f2; } 
+/*--编辑--*/ 
+#lyrow .bg { background-color:rgba(244, 244, 244, 1); } 
+#lyrow .font { font-weight:bold;text-indent:3px;padding:4px 0 6px 11px; } 
+</style>
+<!--下载font-awesome.css图标包-->
+<link rel="stylesheet" href="https://www.58html.com/gui/css/font-awesome/css/font-awesome.css">
+<div id="lyrow">
+
+        
+<div class="bg" >
+    <img src="img/dashboard.png" width="390"></div>
+</div>
+	<!--主体结束-->
+  <!--footer 开始-->
+  <div class="footer">
+    <nav>
+      <center><ul class="footer_menu">
+        <li><a href="../"><img src="skin/images/shouye.png">
+          <label>首页</label>
+          </a></li>
+        <li><a href="/pianjui.html"><img src="skin/images/pianju.png">
+          <label>骗局曝光</label>
+          </a></li>
+        <li><a href="/my.html"><img src="skin/images/plugmenu3.png">
+          <label>我的</label>
+          </a></li>
+      </ul></center>
+    </nav>
+  </div>
+  <!--footer end-->
+	<script>let _rate=window.screen.height/window.screen.width,_limit=window.screen.height==window.screen.availHeight?1.8:1.65;_rate>_limit&&document.body.classList.add("isFullScreen"),navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)&&document.body.classList.add("isIphone"),"serviceWorker"in window.navigator&&navigator.serviceWorker.register("./sw.js").then((function(e){console.log("serviceWorker success")})).catch((function(e){console.log("serviceWorker fail")}))</script>
+</div>
+</body>
+</html>
