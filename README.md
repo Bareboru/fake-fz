@@ -1,3 +1,5 @@
+# 说明
+
 利用iOS端 safari浏览器的全屏规则，添加到手机主屏后模拟出app样式。
 
 原理很简单，只是一个网页，加入了全屏规则，内容都是图片。
@@ -14,7 +16,7 @@
 
 在桌面上就会自动生成一个webapp，打开后和app并无区别，只是只是一个全屏的网页。
 
-全屏规则
+# 全屏规则
 ```js
 //*yes为允许全屏
 <meta name="apple-mobile-web-app-capable” content=“yes” />
@@ -25,6 +27,7 @@
 //*桌面图标
 <link rel="apple-touch-icon” sizes=“114x114” href=“./img/icon.png”/>
 ```
+# 最后
 
 文件为纯静态网页形式，
 
